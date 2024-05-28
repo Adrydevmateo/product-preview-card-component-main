@@ -113,11 +113,18 @@ button {
  align-items: center;
  gap: .5em;
  margin-top: -.4em;
+ cursor: pointer;
+}
+
+button:hover {
+ background-color: var(--Very-dark-blue);
 }
 
 @media screen and (min-width: 1440px) {
  main {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  max-width: 40em;
  }
 
  #img-mobile {
@@ -128,5 +135,10 @@ button {
   display: initial;
   border-top-left-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
+ }
+
+ .row-2 {
+  padding: 2em;
+  display: grid;
  }
 }
